@@ -79,7 +79,7 @@ nav > a {
     text-decoration: none;
     font-weight: bold;
     transition-duration: .5s;
-list-t;}
+}
 
 nav a:hover {
     background-color: var(--cor3);
