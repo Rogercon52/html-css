@@ -21,6 +21,9 @@
             text-align: center;
             color: white;
         }
+        thead > tr > th  {
+            text-align: center;
+        }
         .numero {
             text-align: right;
         }
@@ -30,20 +33,23 @@
         .cor {
             background-color: gray;
         }
+        .cor1 {
+            color: white;
+        }
     </style>
 </head>
 <body>
     <table>
-        <thead>
+        <thead class="centro">
             <tr class="cor">
                 <th rowspan="3" scope="row">Área</th>
                 <th rowspan="2" scope="row">Disciplina</th>
                 <td colspan="2" class="centro" >Notas</td>
-                <td rowspan="2">Média</td>
+                <td rowspan="2" class="centro">Média</td>
             </tr>
             <tr class="cor">
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th class="centro">Nota 1</th>
+                <th class="centro">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -73,8 +79,8 @@
                 <td class="numero">0,0</td>
             </tr>
             <tr class="cor">
-                <th colspan="4" class="cor">Média de Exatas</th>
-                <td class="numero">0,0</td>
+                <th colspan="4" class="cor1">Média de Exatas</th>
+                <td class="numero + cor1">0,0</td>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -90,7 +96,7 @@
                 <td class="numero">0,0</td>
             </tr>
             <tr class="cor">
-                <th colspan="4">Média de Humanas</th>
+                <th colspan="4" class="cor1">Média de Humanas</th>
                 <td class="numero">0,0</td>
             </tr>
         </tbody>
